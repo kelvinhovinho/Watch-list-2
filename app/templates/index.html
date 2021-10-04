@@ -1,2 +1,17 @@
 <!-- <h1> Hello World </h1> -->
-<h1>{{ message }}</h1>
+<!-- <h1>{{ message }}</h1> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+    <title> {{ title }} </title>
+    {% else %}
+    <title>Welcome  </title>
+    {% endif %}
+</head>
+<body>
+    <h1>{{ message }}</h1>
+</body>
+</html>
